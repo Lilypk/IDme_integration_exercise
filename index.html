@@ -1,25 +1,20 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="code exercise">
-        <title>Integration Exercise</title>
-        <script src="exercise.js"></script>
-    </head>
-    <body>
-        <h1>Integration Exercise</h1>
-        <h2>COMPANY EMPLOYEE VERIFICATION</h2>
 
-        <div id="idme-verification">
-            <a href="https://api.id.me/oauth/authorize?client_id=[CLIENT_ID]&redirect_uri=[redirect_uri]&response_type=code&scope=military&state=488e864b">
-              <img src="https://s3.amazonaws.com/idme/developer/idme-buttons/assets/img/verify.svg" height="50"/>
-            </a>
-            <p>
-              <img src="https://developers.id.me/assets/buttons/lock-icon-a5b18fbb34d393a80967c08399786f95955ee818b693b97d3f37698e2bc113f2.svg" height="10"/>
-              Verification by ID.me •
-              <a href="https://www.id.me/about">What is ID.me?</a>
-            </p>
-        </div>
-    </body>
+  <head>
+    <!-- jQuery Dependency -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+    <!-- ID.me Sample Code -->
+    <script src="idme.js"></script>
+  </head>
+
+  <body>
+    <!-- ID.me Widget Buttons -->
+    <span id="idme-wallet-button" data-scope="military,student,employee" data-client-id="[YOUR_CLIENT_ID]" data-op="signin" data-response="token" data-redirect="[YOUR_REDIRECT_URI]" data-text="Verify with ID.me under military, student, or employee!" data-show-verify="true"></span>
+
+    <script src="https://s3.amazonaws.com/idme/developer/idme-buttons/assets/js/idme-wallet-button.js"></script>
+  </body>
+
 </html>
+
 
